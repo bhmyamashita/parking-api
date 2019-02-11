@@ -1,5 +1,7 @@
 package com.bruno.parking.model;
 
+import java.sql.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,7 +28,7 @@ public class Parking {
 	
 	@NotEmpty
 	@Size(max = 200)
-	private String date; // dd/mm/yyyy
+	private String date;
 
 	public Long getId() {
 		return id;
